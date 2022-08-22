@@ -13,6 +13,6 @@ main()
 		if(a[i]<min)
 		min=a[i];
 	}
-	printf("最大值=%d\n",max);
-	printf("最小值=%d\n",min);
+	printf("max=%d\n",max);
+	printf("min=%d\n",min);
  } 
