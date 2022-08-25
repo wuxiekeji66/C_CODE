@@ -9,6 +9,6 @@ int main()
 		i++;
 	}
 
-	printf("长度:%d\n",sizeof(a)/sizeof(a[0]));//计算字符串长度 
+	printf("长度:%d\n",sizeof(a)/sizeof(a[0]));
 	return 0;
 }
