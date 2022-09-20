@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+	int i=0;
+	while(i<=10)
+	{
+		i++;
+		if(i==5)//不打印5 
+		  continue;//不执行后面的语句，从while循环开始 
+		printf("%d ",i);
+	}
+	return 0;
+ }
