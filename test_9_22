@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<assert.h>
+char* my_strcpy(char* dest,const char* src)//目的  //源地 
+{
+	char* ret=dest;
+	assert(dest!=NULL);//断言 
+	assert(src!=NULL);//断言
+	//把src指向的字符串拷贝到dest指向的空间，包含'\0'字符 
+	while(*dest++=*src++)
+	{
+     	; 
+	}
+	return ret;
+}
+int main()
+{
+	char arr1[]="#############";  //目的 
+	char arr2[]="bit";   //源地 
+	printf("%s\n",my_strcpy(arr1,arr2)); 
+	return 0; 
+}
