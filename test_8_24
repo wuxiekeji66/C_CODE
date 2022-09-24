@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main() 
+{
+	int a[10]={0};
+	printf("%d\n",sizeof(a));
+	int sz=0;
+	sz=sizeof(a)/sizeof(a[0]);
+	printf("%d",sz);
+}
