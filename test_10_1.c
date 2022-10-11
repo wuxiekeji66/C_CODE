@@ -11,46 +11,46 @@ void game()
 {
 	int ret=0,guess=0;
 	//RAND_MAX -32767 
-	ret=rand()%100+1;//Éú³É1-100µÄËæ»úÊı.
-    while(1)
-    {
-    	printf("²Â²ÂÕâ¸öÊıÊÇ(1-100)>:");
-	    scanf("%d",&guess);
-    	if(guess>ret)
-    	  printf("±¿µ°,²Â´óÁË\n");
-    	else if(guess<ret)
-    	  printf("Éµ¹Ï,²ÂĞ¡ÁË\n");
-    	else
-    	{
-    		printf("¹§Ï²Äã£¬²Â¶ÔÁË!!!\n\n");
-    		break;
-		}
+	ret=rand()%100+1;//ç”Ÿæˆ1-100çš„éšæœºæ•°.
+        while(1)
+        {
+    	   printf("çŒœçŒœè¿™ä¸ªæ•°æ˜¯(1-100)>:");
+	   scanf("%d",&guess);
+           if(guess>ret)
+    	     printf("ç¬¨è›‹,çŒœå¤§äº†\n");
+    	   else if(guess<ret)
+    	     printf("å‚»ç“œ,çŒœå°äº†\n");
+    	   else
+    	   {
+    	     printf("æ­å–œä½ ï¼ŒçŒœå¯¹äº†!!!\n\n");
+    	     break;
+           }
 	}
 }
 int main()
 {
 	int input=0;
-	srand((unsigned int)time(NULL));//ÄÃÊ±¼ä´ÁÀ´ÉèÖÃËæ»úÊıµÄÉú³ÉÆğÊ¼µã 
+	srand((unsigned int)time(NULL));//æ‹¿æ—¶é—´æˆ³æ¥è®¾ç½®éšæœºæ•°çš„ç”Ÿæˆèµ·å§‹ç‚¹ 
 	do
 	{
-		menu();
-		printf("ÇëÑ¡Ôñ>:");
-		scanf("%d",&input);
-		switch(input)
+	  menu();
+	  printf("è¯·é€‰æ‹©>:");
+	  scanf("%d",&input);
+	  switch(input)
+	  {
+		case 1:
 		{
-			case 1:
-			{
-			    printf("¿ªÊ¼ÓÎÏ·:\n");
-				game();//²ÂÊı×ÖÓÎÏ· 
-				break;
-		    }
-			case 2:
-				printf("ÍË³öÓÎÏ·\n");
-		        break;
-		    default:
-		    	printf("Ñ¡Ôñ´íÎó\n");
-		    	break;
-		}
+		   printf("å¼€å§‹æ¸¸æˆ:\n");
+		   game();//çŒœæ•°å­—æ¸¸æˆ 
+		   break;
+	        }
+		case 2:
+		   printf("é€€å‡ºæ¸¸æˆ\n");
+		   break;
+		default:
+		   printf("é€‰æ‹©é”™è¯¯\n");
+		   break;
+	   }
 	}while(input);
 	return 0;		
 }
